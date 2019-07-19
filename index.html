@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Introduction</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class='para1'>Jquery Tutorial</h1>
+
+    <p id='para1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas incidunt placeat hic dolor adipisci eligendi minus fugiat mollitia rem cumque.</p>
+
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias recusandae quae odio laudantium dolore temporibus quod vel nostrum necessitatibus.</p>
+
+    <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+    </ul>
+
+    <button id='main'> Main Button</button>
+    
+    
+    
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $('p').hide()
+            // $('p#para1').hide()
+            // $('p.para1').hide()
+            // $('button#main').click(function(){
+            //     $('p').hide();
+            // }); 
+            $('button#main').on('mouseenter', function(){
+                $('p#para1').toggle()
+            })
+            
+        });
+    </script>
+</body> 
+</html>
